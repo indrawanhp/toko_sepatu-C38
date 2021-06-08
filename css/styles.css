@@ -12,6 +12,7 @@ li {
 /* bagian header */
 header {
   height: 70px;
+  background-color: rgb(223, 212, 120);
 }
 header h1 {
   display: inline-block;
