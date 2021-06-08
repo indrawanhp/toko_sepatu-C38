@@ -113,7 +113,6 @@ header {
   padding-left: 24px;
 }
 
-
 /* bagian about */
 #about p {
   text-align: justify;
@@ -311,7 +310,7 @@ html {
     display: none;
   }
   .col-4 {
-    width: 50%;
+    width: 100%;
   }
   .col-3 {
     width: 100%;
