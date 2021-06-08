@@ -113,7 +113,17 @@ header {
   padding-left: 24px;
 }
 
+
 /* bagian about */
+#about p {
+  text-align: justify;
+  text-indent: 30px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+.about p {
+  padding: 20px 0;
+}
 
 /* bagian testimonial */
 .testimoni {
