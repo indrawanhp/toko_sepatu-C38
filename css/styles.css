@@ -9,45 +9,37 @@ a {
 li {
   list-style: none;
 }
-.header-left {
-  float: left;
+/* bagian header */
+header {
+  height: 70px;
 }
-.header-left h1 {
+header h1 {
   display: inline-block;
   float: left;
   padding: 15px 24px;
   text-transform: uppercase;
 }
-.header-left h1 a {
+header h1 a {
   transition: 0.3s;
   color: black;
 }
-.header-left h1 a:hover {
+header h1 a:hover {
   color: #f84744;
 }
-header {
-  height: 65px;
-  width: 100%;
-  position: fixed;
-  background-color: white;
-  top: 0;
-  z-index: 10;
-}
-.header-right {
+header ul {
   float: right;
-  margin-right: 25px;
 }
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: black;
-  display: block;
-  float: left;
-  transition: all 0.5s;
+header ul li {
+  display: inline-block;
+  padding: 24px;
+}
+header ul li a {
+  transition: 0.3s;
   text-transform: uppercase;
+  color: black;
 }
-.header-right a:hover {
-  background-color: rgba(122, 122, 122, 0.3);
+header ul li a:hover {
+  color: #f84744;
 }
 .container {
   width: 90%;
@@ -58,6 +50,8 @@ header {
   display: block;
   clear: both;
 }
+
+/* bagian sidebar */
 .mobile-menu {
   float: right;
   display: none;
@@ -75,7 +69,7 @@ header {
   bottom: 0;
   left: -300px;
   width: 300px;
-  background-color: rgba(16, 47, 80, 0.9);
+  background-color: rgba(36, 36, 36, 0.9);
   transition: 0.3s;
   z-index: 9999;
 }
@@ -93,6 +87,109 @@ header {
 #check:checked ~ .sidebar {
   left: 0;
 }
+
+/* bagian banner */
+.banner {
+  background-color: #3a3a3a;
+  padding: 150px 0;
+}
+.banner h2,
+.banner p,
+.banner span {
+  color: #fff;
+}
+.banner h2 {
+  margin-bottom: 10px;
+}
+.banner p {
+  font-size: 18px;
+}
+.banner-left {
+  padding-left: 24px;
+}
+
+/* bagian about */
+
+/* bagian testimonial */
+.testimoni {
+  font-family: Arial;
+  margin: 0 auto; /* Center website */
+  max-width: 800px; /* Max width */
+  padding: 20px;
+}
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+  padding-bottom: 20px;
+}
+.fa {
+  font-size: 25px;
+}
+.checked {
+  color: orange;
+}
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.middle {
+  margin-top: 10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+.space {
+  margin-bottom: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {
+  width: 60%;
+  height: 18px;
+  background-color: #04aa6d;
+}
+.bar-4 {
+  width: 30%;
+  height: 18px;
+  background-color: #04aa6d;
+}
+.bar-3 {
+  width: 10%;
+  height: 18px;
+  background-color: #04aa6d;
+}
+.bar-2 {
+  width: 4%;
+  height: 18px;
+  background-color: #04aa6d;
+}
+.bar-1 {
+  width: 15%;
+  height: 18px;
+  background-color: #04aa6d;
+}
+
 /* bagian contact */
 section {
   padding: 50px 0;
@@ -123,9 +220,25 @@ section h3::after {
   background-color: #f84744;
   left: calc(50% - 20px);
 }
-#skills,
+#testimoni,
 #contact {
   background-color: #f9f9f9;
+}
+
+/* bagian product */
+.col-4 {
+  width: 25%;
+  box-sizing: border-box;
+  padding: 5px;
+  float: left;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.col-4 img {
+  width: 100%;
+}
+.col-4 a:hover img {
+  transform: scale(1.2);
 }
 .col-3 {
   width: 33.33%;
@@ -153,7 +266,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 670px) {
   .mobile-menu {
     display: block;
   }
@@ -165,5 +278,12 @@ html {
   }
   .col-3 {
     width: 100%;
+  }
+  .side,
+  .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
   }
 }
