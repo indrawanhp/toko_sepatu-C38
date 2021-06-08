@@ -12,33 +12,37 @@ li {
 /* bagian header */
 header {
   height: 70px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 0;
 }
-header h1 {
+.header-left {
   display: inline-block;
   float: left;
   padding: 15px 24px;
   text-transform: uppercase;
 }
-header h1 a {
+.header-left h1 a {
   transition: 0.3s;
   color: black;
 }
-header h1 a:hover {
+.header-left h1 a:hover {
   color: #f84744;
 }
-header ul {
+.header-right {
   float: right;
 }
-header ul li {
+.header-right ul li {
   display: inline-block;
   padding: 24px;
 }
-header ul li a {
+.header-right ul li a {
   transition: 0.3s;
   text-transform: uppercase;
   color: black;
 }
-header ul li a:hover {
+.header-right ul li a:hover {
   color: #f84744;
 }
 .container {
