@@ -93,6 +93,18 @@ header {
   left: 0;
 }
 
+footer {
+	background-color: #333;
+	padding:50px;
+	text-align: center;
+}
+footer small {
+	color: #fff;
+}
+html {
+	scroll-behavior: smooth;
+}
+
 @media (max-width: 768px) {
   .mobile-menu {
     display: block;
