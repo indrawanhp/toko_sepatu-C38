@@ -69,6 +69,7 @@ header ul li a:hover {
   bottom: 0;
   left: -300px;
   width: 300px;
+  text-transform: uppercase;
   background-color: rgba(36, 36, 36, 0.9);
   transition: 0.3s;
   z-index: 9999;
