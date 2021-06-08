@@ -3,37 +3,128 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Toko Sepatu</title>
+    <title>Sneaker Store</title>
   </head>
   <body>
     <!-- bagian sidebar -->
     <input type="checkbox" id="check" />
     <div class="sidebar">
-      <a href="">home</a>
-      <a href="">testimonial</a>
-      <a href="">products</a>
-      <a href="#contact">contact</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimoni">testimonial</a></li>
+        <li><a href="#product">products</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
     </div>
 
     <!-- bagian header -->
     <header>
       <div class="container">
-        <div class="header-left">
-          <!-- <img class="logo" src="img/toko3a.png" alt=""> -->
-          <h1><a href="">toko sepatu</a></h1>
-        </div>
-        <div class="header-right">
-          <a href="">home</a>
-          <a href="">testimonial</a>
-          <a href="">products</a>
-          <a href="#contact">contact</a>
-        </div>
+        <h1><a href="">sneakerstore</a></h1>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimoni">testimonial</a></li>
+          <li><a href="#product">products</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
 
         <!-- menu mobile -->
         <label for="check" class="mobile-menu"><i class="fas fa-bars fa-2x"></i></label>
       </div>
     </header>
+    
+    <!-- bagian banner -->
+    <section class="banner">
+      <div class="container">
+        <div class="banner-left">
+          <h2>
+            Hai...<br />
+            Butuh Sneackers <span class="efek-ngetik"></span>
+          </h2>
+          <p>Di SneackerStore Aja</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- bagian about -->
+    
+    <!-- bagian product -->
+    
+    <!-- bagian testimonial -->
+    <section id="testimoni">
+      <div class="container">
+        <h3>Testimonial</h3>
+        <p></p>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p class="space">4.1 average based on 254 reviews.</p>
+        <hr style="border: 3px solid #f1f1f1" />
+
+        <div class="row">
+          <div class="side">
+            <div>5 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+          <div class="side">
+            <div>4 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+          </div>
+          <div class="side">
+            <div>3 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+          <div class="side">
+            <div>2 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          <div class="side">
+            <div>1 star</div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+        </div>
+      </div>
+    </section>
     
     <!-- bagian contact -->
     <section id="contact">
@@ -62,6 +153,6 @@
         <small>Copyright &copy; 2021 - TOKOSEPATU.</small>
       </div>
     </footer>
-    
+    <script src="js/script.js"></script>
   </body>
 </html>
