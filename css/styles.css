@@ -92,7 +92,18 @@ header {
 #check:checked ~ .sidebar {
   left: 0;
 }
-
+.col-3 {
+	width:33.33%;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	padding:50px 10px;
+}
+.col-3 h4 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 15px;
+}
 footer {
 	background-color: #333;
 	padding:50px;
