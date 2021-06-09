@@ -60,6 +60,7 @@ header {
   float: right;
   display: none;
   padding: 18px;
+  border: 1px solid #000;
 }
 .mobile-menu:hover {
   cursor: pointer;
@@ -80,11 +81,14 @@ header {
 }
 .sidebar ul li a {
   color: #fff;
+  display: block;
+  line-height: 70px;
+  padding: 5px 0;
 }
 .sidebar ul li {
-  padding: 24px;
   transition: 0.3s;
   transition-property: background-color;
+  text-align: center;
 }
 .sidebar ul li:hover {
   background-color: #f84744;
@@ -95,7 +99,8 @@ header {
 
 /* bagian banner */
 .banner {
-  background-color: #3a3a3a;
+  background-image: url(https://images.unsplash.com/photo-1521410409201-2fcbcc0379ee?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80);
+  background-size: cover;
   padding: 150px 0;
 }
 .banner h2,
@@ -278,48 +283,4 @@ footer small {
 }
 html {
   scroll-behavior: smooth;
-}
-
-@media (max-width: 1000px) {
-  .mobile-menu {
-    display: block;
-  }
-  header ul {
-    display: none;
-  }
-  .col-4 {
-    width: 50%;
-  }
-  .col-3 {
-    width: 100%;
-  }
-  .side,
-  .middle {
-    width: 100%;
-  }
-  .right {
-    display: none;
-  }
-}
-
-@media (max-width: 670px) {
-  .mobile-menu {
-    display: block;
-  }
-  header ul {
-    display: none;
-  }
-  .col-4 {
-    width: 100%;
-  }
-  .col-3 {
-    width: 100%;
-  }
-  .side,
-  .middle {
-    width: 100%;
-  }
-  .right {
-    display: none;
-  }
 }
