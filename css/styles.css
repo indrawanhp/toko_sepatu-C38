@@ -278,7 +278,7 @@ section h3::after {
 
 /* bagian footer */
 footer {
-  background-color: #333;
+  background-color: rgb(0, 0, 0);
   padding: 50px;
   text-align: center;
 }
